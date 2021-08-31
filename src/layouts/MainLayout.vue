@@ -5,7 +5,7 @@
       <q-toolbar>
         <q-toolbar-title class="font text-h3 flex flex-center">
           <q-avatar >
-            <q-img src="~C:\Users\Mariano\Desktop\Projects\ssms_cics\src\assets\logo.jpg" style="width: 1 100p x q-pa-md"></q-img>>
+            <q-img src="~C:\Users\User\Desktop\CapstoneProjects\student-service\src\assets\logo.jpg" style="width: 1 100p x q-pa-md"></q-img>>
           </q-avatar>
           Student Service Management System
         </q-toolbar-title>
@@ -20,7 +20,7 @@
 </template>
 <style>
 .bg-image {
-  background-image: url(C:\Users\Mariano\Desktop\Projects\ssms_cics\src\assets\image.jpg);
+  background-image: url(C:\Users\User\Desktop\CapstoneProjects\student-service\src\assets\image.jpg);
  /*background-blend-mode: overlay;*/
   background-position: center;
   background-color: rgb(207, 201, 201);

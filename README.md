@@ -1,4 +1,4 @@
-# Quasar App (ssms_cics)
+# Quasar App (student_service)
 
 A Quasar Framework app
 
