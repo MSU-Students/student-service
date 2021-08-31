@@ -1,5 +1,5 @@
-# Quasar App (ssms_cics)
-Hi
+# Quasar App (student_service)
+
 A Quasar Framework app
 
 ## Install the dependencies
