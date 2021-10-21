@@ -3,7 +3,7 @@
 A Quasar Framework app
 
 ## Install the dependencies
-```bash
+```bas---h
 npm install
 ```
 

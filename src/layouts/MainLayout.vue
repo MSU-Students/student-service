@@ -1,29 +1,24 @@
 <template>
-  <q-layout view="hHh lpR fFf">
-
-    <q-header elevated class="bg-primary text-white">
-      <q-toolbar>
-        <q-toolbar-title class="font text-h3 flex flex-center">
-          <q-avatar >
-            <q-img src="~C:\Users\User\Desktop\CapstoneProjects\student-service\src\assets\logo.jpg" style="width: 1 100p x q-pa-md"></q-img>>
-          </q-avatar>
-          Student Service Management System
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
-
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-
-  </q-layout>
+  <div class="q=pa-md">
+    <q-layout view="lHh LpR fFf q-pa-xs">
+      <q-header elevated class="bg-light-blue-14 glossy text-dark">
+        <q-toolbar>
+          COLLEGE OF INFORMATION AND COMPUTING SCIENCES, MSU MAIN CAMPUS -
+          MARAWI CITY | JAWHARAH & JALILAH :) |
+        </q-toolbar>
+      </q-header>
+      <q-page-container>
+        <router-view />
+      </q-page-container>
+    </q-layout>
+  </div>
 </template>
 <style>
 .bg-image {
-  background-image: url(C:\Users\User\Desktop\CapstoneProjects\student-service\src\assets\image.jpg);
- /*background-blend-mode: overlay;*/
+  background-image: url(C:\Users\msu-wone\Desktop\CapstoneProjects\student-service\src\assets\login2.jpg);
+  /*background-blend-mode: blurred;*/
   background-position: center;
   background-color: rgb(207, 201, 201);
-  background-size: 100%; 
+  background-size: 100%;
 }
 </style>
