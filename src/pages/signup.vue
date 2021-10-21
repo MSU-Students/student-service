@@ -2,7 +2,7 @@
   <q-page class="bg-image">
     <div class="q-pa-xs">
       <q-card class="absolute-center bg-white" style="width:500px">
-        <div class="q-gutter-xs q-pa-lg">
+        <div class="q-gutter-xs q-pa-sm">
           <q-input class="bg-black-3" color="blue-grey-10" filled v-model="Fname" label="FULL NAME (First Middle Last)" stack-label />
           <q-input class="bg-black-3" color="blue-grey-10" filled v-model="em" label="Email" suffix="@gmail.com"/>
           <q-input class="bg-black-3" color="blue-grey-10" filled v-model="gnd" label="Gender" />
@@ -41,24 +41,16 @@
             </template>
           </q-input>
         </div>
-        <div class="q-pa-x3 q-gutter-md flex flex-center">
-           <q-card-actions vertical align="center">
-            <q-row></q-row>
-           <q-btn 
-           class="glossy" 
-           color="cyan-5" 
-           label="Confirm"
-           to="SigningPage"
-           style="width: 100px"
-          />
-          <q-btn 
-           class="glossy" 
-           color="cyan-5" 
-           label="Cancel"
-           to="SigningPage"
-           style="width: 100px"
-          />
-           </q-card-actions>
+        <div class="q-pa-sm q-gutter-sm flex flex-center">
+           <q-card-actions class="flex flex-center q-gutter-sm">
+            <div class="q-gutter-md">
+            <q-btn label="Confirm" class="glossy"
+            color="grey-14 text-black" size="15px" to="SigningPage"> </q-btn>
+            <q-btn label="Cancel" class="glossy"
+            color="grey-14 text-black" size="15px" to="SigningPage"> </q-btn>
+            </div>
+
+          </q-card-actions>
         </div>
       </q-card>
     </div>

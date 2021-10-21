@@ -1,12 +1,13 @@
 <template>
   <div class="q=pa-md">
     <q-layout view="lHh LpR fFf q-pa-xs">
-      <q-header elevated class="bg-light-blue-14 glossy text-dark">
+       <q-footer elevated  class="bg-light-blue-14 glossy text-dark"> 
         <q-toolbar>
-          COLLEGE OF INFORMATION AND COMPUTING SCIENCES, MSU MAIN CAMPUS -
-          MARAWI CITY | JAWHARAH & JALILAH :) |
+          <q-toolbar-title>COLLEGE OF INFORMATION AND COMPUTING SCIENCES, MSU MAIN CAMPUS -
+          MARAWI CITY | JAWHARAH & JALILAH :) |</q-toolbar-title>
         </q-toolbar>
-      </q-header>
+      </q-footer>
+
       <q-page-container>
         <router-view />
       </q-page-container>
