@@ -2,7 +2,11 @@
   <q-page class="bg-image">
     <div class="q-pa-xs">
       <q-card class="absolute-center bg-white" style="width:500px">
+<<<<<<< HEAD
         <div class="q-gutter-xs q-pa-sm">
+=======
+        <div class="q-gutter-xs q-pa-lg">
+>>>>>>> 1ef546ee77ad4f7ee4047e4d7c5070438421eeb7
           <q-input class="bg-black-3" color="blue-grey-10" filled v-model="Fname" label="FULL NAME (First Middle Last)" stack-label />
           <q-input class="bg-black-3" color="blue-grey-10" filled v-model="em" label="Email" suffix="@gmail.com"/>
           <q-input class="bg-black-3" color="blue-grey-10" filled v-model="gnd" label="Gender" />
@@ -24,6 +28,7 @@
               />
             </template>
           </q-input>
+<<<<<<< HEAD
 
           <q-input
             class="bg-black-3"
@@ -51,6 +56,43 @@
             </div>
 
           </q-card-actions>
+=======
+
+          <q-input
+            class="bg-black-3"
+            filled v-model="password"
+            color="blue-grey-10"
+            :type="isPwd ? 'password' : 'pass'"
+            label="Confirm Password"
+          >
+            <template v-slot:append>
+              <q-icon
+                :name="isPwd ? 'visibility_off' : 'visibility'"
+                class="cursor-pointer"
+                @click="isPwd = !isPwd"
+              />
+            </template>
+          </q-input>
+        </div>
+        <div class="q-pa-x3 q-gutter-md flex flex-center">
+           <q-card-actions vertical align="center">
+            <q-row></q-row>
+           <q-btn 
+           class="glossy" 
+           color="cyan-5" 
+           label="Confirm"
+           to="SigningPage"
+           style="width: 100px"
+          />
+          <q-btn 
+           class="glossy" 
+           color="cyan-5" 
+           label="Cancel"
+           to="SigningPage"
+           style="width: 100px"
+          />
+           </q-card-actions>
+>>>>>>> 1ef546ee77ad4f7ee4047e4d7c5070438421eeb7
         </div>
       </q-card>
     </div>

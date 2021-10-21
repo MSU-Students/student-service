@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <q-page class="bg-image">
     <div class="q-pa-sm">
     <q-carousel
@@ -68,3 +69,11 @@ export default {
   }
 }
 </script>
+=======
+ <q-page class="bg-image">
+   <div>
+     
+   </div>
+   </q-page>
+</template>
+>>>>>>> 1ef546ee77ad4f7ee4047e4d7c5070438421eeb7

@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
   <q-page class="bg-image">
+=======
+  <q-page class="bg= blue">
+>>>>>>> 1ef546ee77ad4f7ee4047e4d7c5070438421eeb7
     <q-card class="q-pa-sm absolute-center bg-transparent" style="width: 400px">
       <q-card-section class="q-pa-sm">
         <q-card-section>
@@ -24,6 +28,7 @@
           :type="isPwd ? 'password' : 'pass'"
           label="Confirm new password"
           > 
+<<<<<<< HEAD
           <template v-slot:append>
               <q-icon
                 :name="isPwd ? 'visibility_off' : 'visibility'"
@@ -31,6 +36,8 @@
                 @click="isPwd = !isPwd"
               />
             </template>
+=======
+>>>>>>> 1ef546ee77ad4f7ee4047e4d7c5070438421eeb7
           
           </q-input>
         </q-card-section>
@@ -38,7 +45,11 @@
             <q-card-actions vertical align="center">
             <q-btn
             class="glossy" 
+<<<<<<< HEAD
              color="grey-14 text-black" 
+=======
+            color="cyan-5" 
+>>>>>>> 1ef546ee77ad4f7ee4047e4d7c5070438421eeb7
            label="Confirm"
            to="SigningPage"
            style="width: 100px"
@@ -46,7 +57,11 @@
           </q-btn>
           <q-btn
             class="glossy" 
+<<<<<<< HEAD
             color="grey-14 text-black" 
+=======
+            color="cyan-5" 
+>>>>>>> 1ef546ee77ad4f7ee4047e4d7c5070438421eeb7
             label="Cancel"
             to="SigningPage"
             style="width: 100px"
