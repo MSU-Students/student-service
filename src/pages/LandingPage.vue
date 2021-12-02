@@ -42,7 +42,7 @@
                     size="25px"
                     color="white"
                     icon="account_circle"
-                    to="Login"
+                    to="login"
                   >
                    <q-tooltip class="bg-primary text-h7">SIGNIN</q-tooltip>
                   </q-btn>

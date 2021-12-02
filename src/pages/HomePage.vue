@@ -47,12 +47,13 @@
             <q-tooltip class="bg-white text-primary">Close</q-tooltip>
           </q-btn>
         </q-bar>
-
-        <q-card-section>
-          <div class="text-h4">Latest News|Update</div>
-        </q-card-section>
-
+        <q-card class="q-pa-md " style="width: 1000px">
+          <q-card-section>
+          <div class="text-h4 text-black">Latest News|Update</div>
+        </q-card-section> 
         <q-card-section class="q-pt-none"></q-card-section>
+        </q-card>
+        
       </q-card>
     </q-dialog>
       <q-list>
@@ -136,7 +137,7 @@
           - In its early inception, MSU took a piecemeal view towards Information and Communication Technology. 
           It started with the offering of a degree program in Computer Science under the College of Natural Sciences and Mathematics....
          </div>
-        <q-btn flat color="primary" label="Read More.." />
+        <q-btn flat color="primary" label="Read More.."/>
       </div>
     </div>
   </q-page>

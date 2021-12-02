@@ -11,6 +11,7 @@
         <q-img src="~/assets/logo2.gif"></q-img>
       </q-avatar>
       
+      
       <div class="q-pl-lg absolute-center">
       <div class="q-pr-xl">
         <div class="q-pr-xl">
