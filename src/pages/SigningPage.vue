@@ -1,6 +1,5 @@
 <template>
   <q-page class="bg-image">
-<<<<<<< HEAD
     <div class="q-pa-sm">
       <q-avatar square size="150px">
         <q-img
@@ -23,7 +22,7 @@
                     <div class="q-pr-xl">
                       <div
                         class="
-                          text-h1 text-bold text-arial text-black
+                          text-h1 text-bold text-arial text-white
                           flex flex-left 
                         "
                       >
@@ -91,7 +90,7 @@
                     filled
                     v-model="password"
                     label="password"
-                    type="password"
+                    :type= "isPwd ? 'password' : 'text'"
                     style="width: 350px"
                     color="black"
                     bg-color="grey-4"
@@ -112,64 +111,120 @@
           >
             <q-card-actions class="flex flex-center">
             <div class="q-gutter-md">
-            <q-btn 
-            class="glossy"
-            color="grey-14 text-black"
-            label="Log In" 
-            size="15px" 
-            to="login"> 
-            </q-btn>
-
-            <q-btn 
-            class="glossy"
-            color="grey-14 text-black" 
-            label="sign up" 
-            size="15px" 
-            to="signup"> </q-btn>
-            </div>
-
-          </q-card-actions>
-            <a href="http://localhost:8080/#/Forgot_Password" class="float-right">Forgot password? </a>
-          </div>
-=======
-    <div class="q-pa-lg" >
-      <q-card class="absolute-center" style="width: 350px; height: 270px">
-        <q-card-section class="q-pa-md">
-          <q-input color="blue-grey-10" v-model="email" filled type="email" label="Email" />
-           <template v-slot:prepend>
-            <q-icon name="people" />
-            </template>
-        <q-input
-          color="blue-grey-10"
-          v-model="password"
-          filled
-          :type="isPwd ? 'password' : 'text'"
-          label="Password"
-        >
-          <template v-slot:append>
-            <q-icon
-              :name="isPwd ? 'visibility_off' : 'visibility'"
-              class="cursor-pointer"
-              @click="isPwd = !isPwd"
-            />
-          </template>
-        </q-input>
-        <div
-          class="q-gutter-y-md column flex flex-center"
-          style="max-width: 300px"
-        >
-          <q-card-actions vertical align="center">
-           <q-row> </q-row>
-           <q-btn color="cyan-5" glossy text-color="white" label="Login" to="login" />
-           <q-btn color="cyan-5" glossy text-color="white" label="Forgot Password" to="Forgot_Password" />
-           <q-btn color="cyan-5" glossy text-color="white" label="SignUp" to="signup" />
-           </q-card-actions>
-
-        </div>
-
+            <q-btn class="glossy" color="grey-10 text-white" label="Log In" size="15px" to="HomePage" @click="onSave"> </q-btn>
+            <q-btn class="glossy" color="grey-10 text-white" label="signup" size="15px" @click="signup = true" > </q-btn>
+            <q-dialog v-model="signup">
+            <q-card class="absolute-center bg-white" style="width:500px">
+            <q-card-section class="row items-center q-pb-none">
+          <div class="text-h4">Sign up</div>
+          <q-space />
+          <q-btn icon="close" flat round dense v-close-popup />
         </q-card-section>
->>>>>>> 1ef546ee77ad4f7ee4047e4d7c5070438421eeb7
+
+            <div class="q-gutter-xs q-pa-sm">
+              <q-input class="bg-black-3" color="blue-grey-10" filled v-model="Fname" label="FULL NAME (First Middle Last)" stack-label />
+              <q-input class="bg-black-3" color="blue-grey-10" filled v-model="em" label="Email" suffix="@gmail.com"/>
+              <q-input class="bg-black-3" color="blue-grey-10" filled v-model="gnd" label="Gender" />
+              <q-input class="bg-black-3" color="blue-grey-10" filled v-model="add" label="Address" />
+              <q-input class="bg-black-3" color="blue-grey-10" filled v-model="CNum" label="Contact Number" />
+              <q-input
+            class="bg-black-3"
+            filled v-model="pass"
+            color="blue-grey-10"
+            :type="isPwd ? 'password' : 'pass'"
+            label="Password"
+          >
+            <template v-slot:append>
+              <q-icon
+                :name="isPwd ? 'visibility_off' : 'visibility'"
+                class="cursor-pointer"
+                @click="isPwd = !isPwd"
+              />
+            </template>
+          </q-input>
+
+          <q-input
+            class="bg-black-3"
+            filled v-model="password"
+            color="blue-grey-10"
+            :type="isPwd ? 'password' : 'pass'"
+            label="Confirm Password"
+          >
+            <template v-slot:append>
+              <q-icon
+                :name="isPwd ? 'visibility_off' : 'visibility'"
+                class="cursor-pointer"
+                @click="isPwd = !isPwd"
+              />
+            </template>
+          </q-input>
+          </div>
+
+        <q-card-actions class="flex flex-center q-gutter-sm">
+          <q-btn class="glossy" label="Confirm" color="grey-10" v-close-popup />
+        </q-card-actions>
+      </q-card>
+        </q-dialog>
+            </div>
+ </q-card-actions>
+
+          <q-btn flat no-caps label="Forgot Password?" color="grey-14" @click="ForgotPassword = true" />
+          <q-dialog v-model="ForgotPassword">
+          
+          
+      <q-card class="q-pa-sm absolute-center " style="width: 400px">
         
+      <q-card-section class="q-pa-sm">
+        <q-card-section>
+          <q-input
+          color="blue-grey-10"
+          v-model="label"
+          :type="isPwd ? 'password' : 'pass'"
+          label="New password">
+          <template v-slot:append>
+              <q-icon
+                :name="isPwd ? 'visibility_off' : 'visibility'"
+                class="cursor-pointer"
+                @click="isPwd = !isPwd"
+              />
+            </template>
+
+          </q-input>
+
+          <q-input
+          color="blue-grey-10"
+          v-model="label"
+          :type="isPwd ? 'password' : 'pass'"
+          label="Confirm new password"
+          >
+
+          </q-input>
+        </q-card-section>
+           <div  class="q-pa-x3 q-gutter-md flex flex-center">
+            <q-card-actions vertical align="center">
+            <q-btn
+            class="glossy"
+            color="grey-10"
+           label="Confirm"
+           to="SigningPage"
+           style="width: 100px"
+          >
+          </q-btn>
+          <q-btn
+            class="glossy"
+            color="grey-10"
+            label="Cancel"
+            to="SigningPage"
+            style="width: 100px"
+          >
+          </q-btn>
+        </q-card-actions>
+        </div>
+      </q-card-section>
+    </q-card>
+    </q-dialog>
+            
+          </div>
       </q-card>
             </div>
           </div>
@@ -188,6 +243,9 @@ export default {
       password: ref(''),
       isPwd: ref(true),
       email: ref(''),
+      signup: ref('false'),
+      ForgotPassword: ref(false),
+      
       
     };
   },

@@ -7,22 +7,13 @@ const routes: RouteRecordRaw[] = [
     children: [
       { path: '', component: () => import('pages/Index.vue') },
       { path: 'SigningPage', component: () => import('pages/SigningPage.vue') },
-      { path: 'signup', component: () => import('pages/signup.vue') },
-<<<<<<< HEAD
+      { path: 'Announcements', component: () => import('pages/Announcements.vue') },
       { path: 'Forgot_Password', component: () => import('pages/Forgot_Password.vue') },
-      { path: 'login', component: () => import('pages/login.vue') }
-=======
-      { path: 'login', component: () => import('pages/login.vue') },
-      { path: 'Forgot_Password', component: () => import('pages/Forgot_Password.vue') }
->>>>>>> 1ef546ee77ad4f7ee4047e4d7c5070438421eeb7
+      { path: 'HomePage', component: () => import('pages/HomePage.vue') },
+      { path: 'LandingPage', component: () => import('pages/LandingPage.vue') }
       
       
   ],
-  },
-
-  {
-    path: '/login',
-    component: () => import('pages/login.vue'),
   },
 
   // Always leave this as last one,
